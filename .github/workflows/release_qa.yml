@@ -1,4 +1,4 @@
-name: Fly Production Deploy
+name: Fly QA Deploy
 on:
   push:
     branches:
