@@ -18,7 +18,7 @@ export default function Header() {
     })
 
     return (
-        <Navbar sticky="top" expand="sm" className={`justify-content-center ${isActive ? "active" : ""}`}>
+        <Navbar sticky="top" expand="md" className={`justify-content-center ${isActive ? "active" : ""}`}>
             <Container className="m-2 d-flex">
                 <Navbar.Brand href="/">
                     <img

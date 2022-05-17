@@ -9,6 +9,9 @@ body {
 .navbar {
     color: white;
     padding-left: 10px;
+    position: fixed;
+    width: 100%;
+
     /* To give smooth change */
     -webkit-transition: all ease-out .5s;
     -moz-transition: all ease-out .5s;
