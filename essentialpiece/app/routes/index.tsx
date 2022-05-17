@@ -1,7 +1,7 @@
 import { LinksFunction } from "@remix-run/node";
 
 import homeStyles from "../styles/home/index.css";
-import mainLogo from '~/assets/images/Splash.jpg';
+import mainbanner from '~/assets/images/homeBanner.jpg';
 import joinButton from '~/assets/images/btn_join.svg';
 
 export let links: LinksFunction = () => {
@@ -9,7 +9,7 @@ export let links: LinksFunction = () => {
 };
 
 var heroStyle = {
-  backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("${mainLogo}")`
+  backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("${mainbanner}")`
 }
 
 var buttonStyle = {
