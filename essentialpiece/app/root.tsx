@@ -10,6 +10,7 @@ import {
   useLoaderData
 } from "@remix-run/react";
 import Header from "~/components/header";
+import Footer from "~/components/footer";
 import rootStyle from '~/styles/site.css';
 
 export const meta: MetaFunction = () => ({
@@ -51,12 +52,13 @@ export default function App() {
         <Links />
         <script defer data-domain={analyticsURI} src="https://plausible.io/js/plausible.js"></script>
       </head>
-      <body>
+      <body className="d-flex flex-column min-vh-100">
         <Header />
         <Outlet />
         <ScrollRestoration />
         <Scripts />
         <LiveReload />
+        <Footer />
       </body>
     </html>
   );

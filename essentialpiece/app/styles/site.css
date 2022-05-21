@@ -3,6 +3,7 @@
 html,
 body {
     font-family: 'Poppins', sans-serif;
+  
 }
 
 /* Header */
@@ -36,4 +37,106 @@ body {
 
 .active {
     background-color: #020001;
+}
+
+/* Footer */
+.footer {
+    background-color: #020001;
+    color: white;
+}
+
+.footer .row {
+    padding-top: 5%; 
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-left: 7%;
+    margin-right: 7%;
+}
+
+.footer .nav-link {
+    padding-left: 0em;
+}
+
+.footer h5 {
+    font-weight: 900;
+}
+
+#copyright, #inquire, #epStatement {
+    font-size: 11pt;
+}
+
+#smallCol {
+    border-left: solid 1px #CFCFCF;
+    margin-bottom: 3%;
+}
+
+#col,
+#smallCol,
+#copyright {
+    padding-right: 3%;
+    padding-left: 3%;
+
+}
+
+#col,
+#smallCol {
+    margin-top: 3%;
+}
+
+.footer h5,
+#logo {
+    padding-bottom: 2%;
+}
+
+#copyright {
+    padding-bottom: 5%;
+}
+
+#epStatement {
+    padding-top: 3%;
+    padding-bottom: 7%;
+}
+
+.socialMediaIcons {
+    padding-right: 5%;
+}
+
+#firstCol {
+    padding-top: 2%;
+}
+
+circle {
+    fill: white;
+}
+
+#smallCol .nav-link {
+    padding-top: 0%;
+}
+
+#inquire {
+    padding-top: 12% !important;
+    color: #6EC9BE !important;
+}
+
+@media (max-width: 768px) {
+    #smallCol {
+        border-left: none;
+    }
+
+    .footer {
+        border: none;
+    }
+
+    #col {
+        margin-bottom: 3%;
+    }
+
+    .footer .row {
+        margin: 0%;
+        border: none;
+    }
+
+    #copyright {
+        padding-top: 3%;
+    }
 }
