@@ -1,0 +1,14 @@
+.productList-title {
+    text-align: center;
+}
+
+.product-card {
+    background-color: #E8E8E8;
+    font-weight: 600;
+
+}
+
+.product-featured {
+    background-color: #6EC9BE;
+    color: white;
+}

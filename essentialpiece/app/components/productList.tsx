@@ -1,10 +1,8 @@
 import { ProductType } from "~/models/enums/ProductType";
+import { ProductListProps } from "~/models/interfaces/ProductListProps";
 import { Product } from "~/models/Product";
 
-export default function ProductList() {
-    let products: Array<Product> = [
-        new Product("The Radiant", "Some long descriptoin describing the product being used", 12, ProductType.Monthly, "", false)
-    ];
+export default function ProductList(props: ProductListProps) {
 
     var currencyFormat = new Intl.NumberFormat('en-US', {
         style: 'currency',
@@ -18,8 +16,8 @@ export default function ProductList() {
     //Function to get products from API
 
     return (
-        <div className="container">
-            {products.map(item =>
+        <div className="container col-md-3">
+            {props.Products.map(item =>
                 // additional classname based on product type
                 <div className={`product-card ${item.isFeatured ? "product-featured": ""}`}>
                     <div className="row">
