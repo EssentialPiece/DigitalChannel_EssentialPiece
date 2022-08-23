@@ -21,7 +21,7 @@ export default function Index() {
     <div className="hero-image" style={heroStyle}>
       <div className="hero-inner">
         <div className="hero-text">TIME TO PUT FITNESS FIRST</div>
-        <button className="hero-button" style={buttonStyle}>Join Now</button>
+        <a href="/contact"><button className="hero-button" style={buttonStyle}>Join Now</button></a>
       </div>
       <div className="hero-mobile-scroll">
         <span className="px-2">
