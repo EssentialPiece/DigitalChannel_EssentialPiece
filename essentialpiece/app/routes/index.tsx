@@ -13,7 +13,7 @@ var heroStyle = {
 }
 
 var buttonStyle = {
-  background: `url("${joinButton}") no-repeat;`
+  background: `url("${joinButton}") no-repeat`
 }
 
 export default function Index() {

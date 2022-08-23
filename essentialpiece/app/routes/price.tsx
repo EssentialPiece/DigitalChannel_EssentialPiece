@@ -1,9 +1,14 @@
+import { LinksFunction } from "@remix-run/node";
 import { Outlet } from "@remix-run/react";
+import priceStyles from "../styles/price/index.css";
+
+export let links: LinksFunction = () => {
+  return [{ rel: "stylesheet", href: priceStyles }];
+};
 
 export default function PriceRoute() {
   return (
     <div>
-      <h1>Price</h1>
       <main>
         <Outlet />
       </main>

@@ -36,9 +36,9 @@ export default function Header() {
                     </h5>
                     <Nav className="justify-content-end flex-grow-1">
                         <Nav.Link href="/">HOME</Nav.Link>
-                        <Nav.Link href="/about">ABOUT</Nav.Link>
+                        {/* <Nav.Link href="/about">ABOUT</Nav.Link> */}
                         <Nav.Link href="/price">PRICE</Nav.Link>
-                        <Nav.Link href="/blog">BLOG</Nav.Link>
+                        {/* <Nav.Link href="/blog">BLOG</Nav.Link> */}
                         <Nav.Link href="/contact">CONTACT</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
