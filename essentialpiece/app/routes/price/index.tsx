@@ -37,13 +37,13 @@ export default function PriceIndexRoute() {
     <div>
       <div className="banner-image" style={heroStyle}></div>
       <div className="container">
-        <h2 className="row productList-title">Monthly Products</h2>
-        <div className="row">
+        <h2 className="row productList-title">Featured Products</h2>
+        <div className="row m-auto">
           <ProductList {...monthlyProductList} />
         </div>
 
-        <h2 className="row productList-title">One-Time Products</h2>
-        <div className="row">
+        <h2 className="row productList-title">All Products</h2>
+        <div className="row m-auto">
           <ProductList {...onetimeProductList} />
         </div>
       </div>
