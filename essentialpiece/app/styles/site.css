@@ -114,6 +114,10 @@ body {
     color: #6EC9BE !important;
 }
 
+#copyright {
+    padding-top: 3%;
+}
+
 @media (max-width: 768px) {
     #smallCol {
         border-left: none;
@@ -130,10 +134,6 @@ body {
     .footer .row {
         margin: 0%;
         border: none;
-    }
-
-    #copyright {
-        padding-top: 3%;
     }
 }
 
