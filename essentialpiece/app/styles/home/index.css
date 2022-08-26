@@ -59,7 +59,47 @@
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
 }
 
+/* about us hero styling */
+.about-welcome {
+  color: #14212B;
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: bold;
+  text-transform: capitalize;
+  text-align: center;
+  padding: 6% 20% 4%;
+}
 
+.about-hero {
+  padding: 0% 12% 6% 12%;
+}
+
+.about-title {
+ color: #6EC9BE;
+ font-weight: bold;
+ font-size: 25px;
+}
+
+.about-image {
+  width: 100%;
+}
+
+.about-img-container {
+  flex: 0 0 50%;
+  padding-right: 1.5%;
+}
+
+.about-button {
+  margin-top: 4%;
+  width: 175px;
+  height: 54px;
+  background-size: contain !important;
+  border: none;
+}
+
+.about-text {
+  padding-left: 1.5%;
+}
 
 /* Media Queries */
 
@@ -83,5 +123,15 @@
 
   .hero-mobile-scroll {
     visibility: visible;
+  }
+
+  /* about us hero styling */
+  .about-welcome {
+    font-size: 23px;
+    line-height: 23px;
+  }
+
+  .about-title {
+    font-size: 20px;
   }
 }
