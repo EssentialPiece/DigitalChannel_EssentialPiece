@@ -1,6 +1,11 @@
 .productList-title {
     justify-content: center;
-    margin-top: 30px;
+    color: #14212B;
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: bold;
+    text-transform: capitalize;
+    padding: 6% 20% 4%;
 }
 
 .product-wrapper {
