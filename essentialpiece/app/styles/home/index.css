@@ -72,6 +72,8 @@
 
 .about-hero {
   padding: 0% 12% 6% 12%;
+  max-width: 2000px;
+  margin: auto;
 }
 
 .about-title {
@@ -133,5 +135,6 @@
 
   .about-title {
     font-size: 20px;
+    padding-top: 3%;
   }
 }
