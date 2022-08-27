@@ -39,7 +39,7 @@ export default function Index() {
           SCROLL DOWN</div>
       </div>
       <div className="about-welcome">WELCOME TO <br></br>ESSENTIAL PIECE</div>
-      <div className="d-flex flex-column-reverse flex-md-row justify-content-center align-items-center about-hero">
+      <div className="d-flex flex-column flex-md-row justify-content-center align-items-center about-hero">
         <div className="about-img-container">
           <img
             className="about-image"
