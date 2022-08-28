@@ -12,7 +12,7 @@ export type ContactFormModel = {
 
 var mailOptions = {
   from: 'noreply.essentialpiecefitness@gmail.com',
-  to: 'omarahmed1121@gmail.com',
+  to: 'essentialpiecefitness@gmail.com',
   subject: 'New Contact Form Submission',
   html: 'test'
 };
