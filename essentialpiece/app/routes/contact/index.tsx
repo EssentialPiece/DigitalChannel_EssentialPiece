@@ -5,6 +5,9 @@ import banner from '~/assets/images/Banner.jpg';
 import ContactForm, { validator } from '~/components/contactForm';
 import { sendEmail } from '~/email.server';
 
+const SuccessMessage = "Email sent! We look forward to working with you soon.";
+const ErrorMessage = "Oops! Something went wrong. Please try again later.";
+
 export const action: ActionFunction = async ({
   request,
 }) => {
@@ -18,11 +21,12 @@ export const action: ActionFunction = async ({
   }
 
   const { name, email,  help_information, referral, call_information } = result.data;
-  // Do something with the data
-  // console.log(result.data);
   
-  sendEmail(result.data);
-  return result;
+  let resp = await sendEmail(result.data);
+  return { 
+    success: resp, 
+    message: resp? SuccessMessage : ErrorMessage
+  };
 };
 
 var heroStyle = {

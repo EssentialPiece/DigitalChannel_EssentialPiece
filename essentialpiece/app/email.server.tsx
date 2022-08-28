@@ -1,42 +1,43 @@
-import { json } from '@remix-run/node';
-import ContactForm from './components/contactForm';
-var nodemailer = require('nodemailer');
+import ContactEmail from './components/contactEmail';
+const sendgrid = require('@sendgrid/mail')
+import ReactDOMServer from 'react-dom/server'
 
-export type ContactForm = {
-    name: string | undefined;
-    email: string | undefined;
-    help_information: string | undefined;
-    referral: string | undefined;
-    call_information: string | undefined;
-  };
+export type ContactFormModel = {
+  name: string;
+  email: string;
+  help_information: string | undefined;
+  referral: string | undefined;
+  call_information: string | undefined;
+};
 
-  var transporter = nodemailer.createTransport({
-    service: 'gmail',
-    auth: {
-      user: 'noreply.essentialpiecefitness',
-      pass: 'somepass'
-    }
-  });
+var mailOptions = {
+  from: 'noreply.essentialpiecefitness@gmail.com',
+  to: 'omarahmed1121@gmail.com',
+  subject: 'New Contact Form Submission',
+  html: 'test'
+};
 
-  var mailOptions = {
-    from: 'noreply.essentialpiecefitness@gmail.com',
-    to: 'omarahmed1121@gmail.com',
-    subject: 'Contact Form Submission',
-    text: 'That was easy!'
-  };
+export async function sendEmail(formData: ContactFormModel) {
+  let response = false;
 
-export async function sendEmail(email: ContactForm) {
-      console.log("Server Hit")
-     try{
-        let info = await transporter.sendMail({
-            from: 'noreply.essentialpiecefitness@gmail.com', // sender address
-            to: "omarahmed1121@gmail.com", // list of receivers
-            subject: "Hello ✔", // Subject line
-            text: "Hello world?", // plain text body
-          });
-          console.log("Message sent: %s", info.messageId);
-     }
-     catch(err) {
-        console.log("Error caught!",err );
-    }
+  if(!process.env.SENDGRID_API_KEY)
+  {
+    return response;
+  }
+
+  //Check if API key exists
+  sendgrid.setApiKey(process.env.SENDGRID_API_KEY);
+  mailOptions.html = ReactDOMServer.renderToString(ContactEmail(formData));
+
+  await sendgrid
+    .send(mailOptions)
+    .then(() => {
+      // Pass success Message to page
+      response = true;
+    })
+    .catch((error) => {
+      // Pass error status to page
+    })
+
+    return response;
 }
