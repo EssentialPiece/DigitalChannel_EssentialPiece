@@ -44,7 +44,7 @@ export default function ProductList({products}: {products: ProductDocument[]}) {
                                             {currencyFormat.format(item.cost)} USD
                                         </div>
                                         <div className="row m-auto product-price-subtext text-capitalize">
-                                            {item.productType}
+                                            {item.productType == "monthly" ? "Monthly" : ""}
                                         </div>
                                     </div>
                                 </div>
