@@ -1,0 +1,147 @@
+.hero-image {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); */
+
+  /* Set a specific height */
+  height: 100vh;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Place text in the middle of the image */
+.hero-inner {
+  position: absolute;
+  top: 50%;
+  left: 26%;
+  transform: translate(-50%, -50%);
+}
+
+.hero-text {
+  color: white;
+  font-size: 72px;
+  line-height: 75px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.hero-button {
+  width: 175px;
+  height: 54px;
+  background-size: contain !important;
+  border: none;
+
+  font-weight: bold;
+  color: white;
+  font-size: 25px;
+  padding-right: 25px;
+  margin-top: 10px;
+}
+
+.hero-mobile-scroll {
+  visibility: hidden;
+  position: absolute;
+  top: 85%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+
+  color: white;
+  white-space: nowrap;
+
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+
+/* about us hero styling */
+.about-welcome {
+  color: #14212B;
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: bold;
+  text-transform: capitalize;
+  text-align: center;
+  padding: 6% 20% 4%;
+}
+
+.about-hero {
+  padding: 0% 12% 6% 12%;
+  max-width: 2000px;
+  margin: auto;
+}
+
+.about-title {
+ color: #6EC9BE;
+ font-weight: bold;
+ font-size: 25px;
+}
+
+.about-image {
+  width: 100%;
+}
+
+.about-img-container {
+  flex: 0 0 50%;
+  padding-right: 1.5%;
+}
+
+.about-button {
+  margin-top: 4%;
+  width: 175px;
+  height: 54px;
+  background-size: contain !important;
+  border: none;
+}
+
+.about-text {
+  padding-left: 1.5%;
+}
+
+/* Media Queries */
+
+/* small view */
+@media only screen and (max-width: 600px) {
+  .hero-inner {
+    top: 80%;
+    left: 38%;
+  }
+
+  .hero-text {
+    font-size: 30px;
+    line-height: 35px;
+  }
+
+  .hero-button {
+    width: 116px;
+    height: 36px;
+    font-size: 15px;
+  }
+
+  .hero-mobile-scroll {
+    visibility: visible;
+  }
+
+  /* about us hero styling */
+  .about-welcome {
+    font-size: 23px;
+    line-height: 23px;
+  }
+
+  .about-title {
+    font-size: 20px;
+    padding-top: 3%;
+  }
+}
+
+/* medium view */
+@media only screen and (max-width: 992px) {
+  .hero-inner {
+    left: 40%;
+  }
+}

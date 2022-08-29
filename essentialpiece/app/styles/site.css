@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+html,
+body {
+    font-family: 'Poppins', sans-serif;
+  
+}
+
+/* Header */
+.navbar {
+    color: white;
+    padding-left: 10px;
+    position: fixed;
+    width: 100%;
+
+    /* To give smooth change */
+    -webkit-transition: all ease-out .5s;
+    -moz-transition: all ease-out .5s;
+    -o-transition: all ease-out .5s;
+    transition: all ease-out .5s;
+}
+
+.navbar-brand {
+    color: white !important;
+    padding-right: 10px;
+}
+
+.nav-link {
+    font-weight: 600;
+    color: white !important;
+    padding-right: 10px;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml, %3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2261%22%20height%3D%2247%22%20viewBox%3D%220%200%2041%2027%22%3E%0A%20%20%3Cg%20id%3D%22Group_115%22%20data-name%3D%22Group%20115%22%20transform%3D%22translate(-322%20-28)%22%3E%0A%20%20%20%20%3Crect%20id%3D%22Rectangle_72%22%20data-name%3D%22Rectangle%2072%22%20width%3D%2261%22%20height%3D%2247%22%20transform%3D%22translate(322%2028)%22%20fill%3D%22rgb(255%2C255%2C255)%22%20opacity%3D%220.32%22%2F%3E%0A%20%20%20%20%3Cg%20id%3D%22Group_46%22%20data-name%3D%22Group%2046%22%20transform%3D%22translate(8%209)%22%3E%0A%20%20%20%20%20%20%3Crect%20id%3D%22Rectangle_69%22%20data-name%3D%22Rectangle%2069%22%20width%3D%2220%22%20height%3D%222%22%20rx%3D%221%22%20transform%3D%22translate(326%2026)%22%20fill%3D%22rgb(255%2C255%2C255)%22%2F%3E%0A%20%20%20%20%20%20%3Crect%20id%3D%22Rectangle_70%22%20data-name%3D%22Rectangle%2070%22%20width%3D%2220%22%20height%3D%222%22%20rx%3D%221%22%20transform%3D%22translate(326%2031)%22%20fill%3D%22rgb(255%2C255%2C255)%22%2F%3E%0A%20%20%20%20%20%20%3Crect%20id%3D%22Rectangle_71%22%20data-name%3D%22Rectangle%2071%22%20width%3D%2217%22%20height%3D%222%22%20rx%3D%221%22%20transform%3D%22translate(329%2036)%22%20fill%3D%22rgb(255%2C255%2C255)%22%2F%3E%0A%20%20%20%20%3C%2Fg%3E%0A%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E%0A") !important;
+}
+
+.active {
+    background-color: #020001;
+}
+
+/* Footer */
+.footer {
+    background-color: #020001;
+    color: white;
+}
+
+.footer .row {
+    padding-top: 5%; 
+    padding-left: 9%;
+    padding-right: 9%;
+    margin: auto;
+    max-width: 2000px;
+    
+}
+
+.footer .nav-link {
+    padding-left: 0em;
+}
+
+.footer h5 {
+    font-weight: 900;
+}
+
+#copyright, #inquire, #epStatement {
+    font-size: 11pt;
+}
+
+#smallCol {
+    border-left: solid 1px #CFCFCF;
+    margin-bottom: 3%;
+}
+
+#col,
+#smallCol,
+#copyright {
+    padding-right: 3%;
+    padding-left: 3%;
+
+}
+
+#col,
+#smallCol {
+    margin-top: 3%;
+}
+
+.footer h5,
+#logo {
+    padding-bottom: 2%;
+}
+
+#copyright {
+    padding-bottom: 5%;
+}
+
+#epStatement {
+    padding-top: 3%;
+    padding-bottom: 7%;
+}
+
+.socialMediaIcons {
+    padding-right: 5%;
+}
+
+#firstCol {
+    padding-top: 2%;
+}
+
+#smallCol .nav-link {
+    padding-top: 0%;
+}
+
+#inquire {
+    padding-top: 12% !important;
+    color: #6EC9BE !important;
+}
+
+#copyright {
+    padding-top: 3%;
+}
+
+@media (max-width: 768px) {
+    #smallCol {
+        border-left: none;
+    }
+
+    .footer {
+        border: none;
+    }
+
+    #col {
+        margin-bottom: 3%;
+    }
+
+    .footer .row {
+        margin: 0%;
+        border: none;
+    }
+}
+
+/* Banner */
+.banner-image {
+    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); */
+  
+    /* Set a specific height */
+    height: 30vh;
+  
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
