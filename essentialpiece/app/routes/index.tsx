@@ -11,7 +11,7 @@ export let links: LinksFunction = () => {
 };
 
 var heroStyle = {
-  backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("${mainbanner}")`
+  backgroundImage: `linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("${mainbanner}")`
 }
 
 var buttonStyle = {
@@ -27,7 +27,7 @@ export default function Index() {
     <div>
       <div className="hero-image" style={heroStyle}>
         <div className="hero-inner">
-          <div className="hero-text">TIME TO PUT FITNESS FIRST</div>
+          <div className="hero-text">TIME TO<br/> PUT FITNESS<br/> FIRST</div>
           <a href="/contact"><button className="hero-button" style={buttonStyle}>Join Now</button></a>
         </div>
         <div className="hero-mobile-scroll">

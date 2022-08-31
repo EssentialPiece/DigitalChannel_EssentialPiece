@@ -1,0 +1,21 @@
+.hero-button {
+    width: 150px;
+    height: 46px;
+    background-size: contain !important;
+    border: none;
+  
+    font-weight: bold;
+    color: white;
+    font-size: 18px;
+    padding-right: 25px;
+    margin-top: 10px;
+  }
+
+  .form-title {
+    color: #14212B;
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: bold;
+    text-transform: capitalize;
+    text-align: center;
+  }
